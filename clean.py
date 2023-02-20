@@ -9,6 +9,8 @@ def clean(input_file1,input_file2):
     df = df[~df['job'].str.contains('Insurance')]
     return df
 
+print(df.shape)
+
 
 if __name__ == '__main__':
     import argparse

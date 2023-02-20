@@ -9,7 +9,8 @@ def clean(input_file1,input_file2):
     df = df[~df['job'].str.contains('Insurance')]
     return df
 
-print(df.shape)
+data = clean("respondent_contact.csv","respondent_other.csv")
+print(data.shape)
 
 
 if __name__ == '__main__':
